@@ -13,8 +13,7 @@ set(CMAKE_CXX_STANDARD 14)
 
 # Configure PureNES library target
 add_library(purenes STATIC
-        src/cpu.cpp
-        )
+        src/cpu.cpp)
 
 target_include_directories(purenes PUBLIC include/purenes)
 set_target_properties(purenes PROPERTIES VERSION ${PROJECT_VERSION})
@@ -35,8 +34,7 @@ enable_testing()
 
 # Configure test target
 add_executable(purenes_tests
-        test/cpu/cpu_test.cpp
-        )
+        test/cpu/cpu_test.cpu)
 
 target_include_directories(purenes_tests PRIVATE include/purenes)
 target_link_libraries(purenes_tests gtest_main)
