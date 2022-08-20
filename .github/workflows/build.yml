@@ -18,7 +18,6 @@ jobs:
           triplet: x64-osx
 
     steps:
-
     - uses: actions/checkout@v2
 
     # Setup the build machine with the most recent versions of CMake and Ninja.
