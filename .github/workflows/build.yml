@@ -18,18 +18,22 @@ jobs:
           triplet: x64-osx
 
     steps:
+
     - uses: actions/checkout@v2
 
-    # Setup the build machine with the most recent versions of CMake and Ninja. Both are cached if not already: on subsequent runs both will be quickly restored from GitHub cache service.
+    # Setup the build machine with the most recent versions of CMake and Ninja.
     - uses: lukka/get-cmake@latest
 
+    # Generate the build system
     - name: Generate build system
       run: |
         cmake -S . -B build
+
     # Build PureNES
     - name: Build
       run: |
         cmake --build build
+
     # Run tests
     - name: Test
       run: |
