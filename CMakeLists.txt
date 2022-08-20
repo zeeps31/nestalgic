@@ -34,7 +34,7 @@ enable_testing()
 
 # Configure test target
 add_executable(purenes_tests
-        test/cpu/cpu_test.cpu)
+        test/cpu/cpu_test.cpp)
 
 target_include_directories(purenes_tests PRIVATE include/purenes)
 target_link_libraries(purenes_tests gtest_main)
