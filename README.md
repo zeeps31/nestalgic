@@ -1,4 +1,4 @@
-# NEStalgiac 
+# NEStalgic 
 
 NEStalgic is a NES emulator.
 
