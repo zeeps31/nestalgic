@@ -1,0 +1,13 @@
+Checks: >
+  -*,
+  google-*,
+  readability-*,
+  -readability-redundant-access-specifiers,
+  performance-*,
+  modernize-*,
+  cppcoreguidelines-*,
+  bugprone-*,
+  misc-*,
+  clang-analyzer-*
+
+WarningsAsErrors: '*'
