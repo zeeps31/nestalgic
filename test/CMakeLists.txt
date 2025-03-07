@@ -14,6 +14,7 @@ FetchContent_MakeAvailable(googletest)
 # Configure test target
 add_executable(nestalgic_tests
         cpu_test.cpp
+        cpu_bus_test.cpp
 )
 
 target_include_directories(nestalgic_tests PRIVATE ${CMAKE_SOURCE_DIR}/include)

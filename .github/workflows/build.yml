@@ -36,4 +36,4 @@ jobs:
     # Run tests
     - name: Test
       run: |
-        cd build && ctest
+        ctest --test-dir build/test
